@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.1">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -37883,11 +37883,11 @@ grid 5.08 mm</description>
 </classes>
 <parts>
 <part name="U1" library="stm32f0" deviceset="STM32F042KXTX" device=""/>
-<part name="U$1" library="voltage_regulators" deviceset="MC34063/MC33063" device=""/>
+<part name="U$1" library="voltage_regulators" deviceset="MC34063/MC33063" device="" value="MC34063"/>
 <part name="C1" library="rcl" deviceset="CPOL-EU" device="CT7343" package3d_urn="urn:adsk.eagle:package:23304/2"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
 <part name="D1" library="diode" deviceset="DIODE-" device="DO214AC" package3d_urn="urn:adsk.eagle:package:43417/2"/>
-<part name="T1" library="transistor-npn" deviceset="BC847*" device="SMD" package3d_urn="urn:adsk.eagle:package:28738/2" technology="BLT1" value="BC847BLT1SMD"/>
+<part name="T1" library="transistor-npn" deviceset="BC847*" device="SMD" package3d_urn="urn:adsk.eagle:package:28738/2" technology="BLT1" value="BC847"/>
 <part name="T2" library="transistor-neu-to92" deviceset="*-PNP-" device="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" technology="BC857C"/>
 <part name="Q1" library="transistor-fet" deviceset="IRF840" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
