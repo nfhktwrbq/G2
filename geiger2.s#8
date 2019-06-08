@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -28170,9 +28170,9 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <instance part="GND35" gate="1" x="200.66" y="58.42" smashed="yes">
 <attribute name="VALUE" x="198.12" y="55.88" size="1.778" layer="96"/>
 </instance>
-<instance part="T5" gate="G$1" x="162.56" y="83.82" smashed="yes" rot="R180">
-<attribute name="NAME" x="172.72" y="76.2" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="172.72" y="78.74" size="1.778" layer="96" rot="R180"/>
+<instance part="T5" gate="G$1" x="162.56" y="83.82" smashed="yes" rot="MR0">
+<attribute name="NAME" x="172.72" y="91.44" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="172.72" y="88.9" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SG1" gate="G$1" x="157.48" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="152.4" y="91.44" size="1.778" layer="95" rot="R90"/>
@@ -28548,7 +28548,7 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <wire x1="177.8" y1="71.12" x2="177.8" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="GND36" gate="1" pin="GND"/>
 <wire x1="177.8" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="T5" gate="G$1" pin="C"/>
+<pinref part="T5" gate="G$1" pin="E"/>
 <wire x1="160.02" y1="78.74" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
 <junction x="160.02" y="68.58"/>
 </segment>
@@ -29431,23 +29431,12 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <net name="N$59" class="0">
 <segment>
 <pinref part="R30" gate="G$1" pin="1"/>
-<pinref part="T5" gate="G$1" pin="B"/>
 <wire x1="187.96" y1="83.82" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="83.82" x2="165.1" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="81.28" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="T5" gate="G$1" pin="B"/>
+<wire x1="165.1" y1="83.82" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
 <junction x="177.8" y="83.82"/>
-</segment>
-</net>
-<net name="N$61" class="0">
-<segment>
-<pinref part="T5" gate="G$1" pin="E"/>
-<pinref part="SG1" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="88.9" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="D4" gate="D" pin="A"/>
-<wire x1="167.64" y1="93.98" x2="167.64" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="88.9" x2="160.02" y2="88.9" width="0.1524" layer="91"/>
-<junction x="160.02" y="88.9"/>
 </segment>
 </net>
 <net name="N$60" class="0">
@@ -29479,6 +29468,17 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <pinref part="S3" gate="1" pin="P1"/>
 <wire x1="213.36" y1="-101.6" x2="213.36" y2="-104.14" width="0.1524" layer="91"/>
 <junction x="213.36" y="-101.6"/>
+</segment>
+</net>
+<net name="N$62" class="0">
+<segment>
+<pinref part="T5" gate="G$1" pin="C"/>
+<pinref part="SG1" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="88.9" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="D4" gate="D" pin="A"/>
+<wire x1="160.02" y1="88.9" x2="167.64" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="88.9" x2="167.64" y2="93.98" width="0.1524" layer="91"/>
+<junction x="160.02" y="88.9"/>
 </segment>
 </net>
 </nets>
